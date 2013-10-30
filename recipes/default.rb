@@ -26,15 +26,6 @@ node.set['djbdns']['service_type'] = value_for_platform(
 
 installation_method = value_for_platform(
     "arch" => { "default" => "aur" },
-    "debian" => { "4.0" => "source", "default" => "package" },
-    "ubuntu" => {
-      "6.06" => "source",
-      "6.10" => "source",
-      "7.04" => "source",
-      "7.10" => "source",
-      "8.04" => "source",
-      "default" => "package"
-    },
     "default" => "source"
 )
 
